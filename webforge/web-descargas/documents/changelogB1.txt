@@ -1,0 +1,12 @@
+Changelog Region Arjonia
+-------------------
+
+Beta 1   (04-06-2023)
+  * ¡Ahora puedes subir tus datos a la web!
+  * Se agrega la posibilidad de cambiar el tamaño de pantalla (En las opciones del juego)
+  * Se agrega la posibilidad de escribir con el teclado"
+  * Se quita el envenamiento fuera de combate.
+  * Se corrige bug al evolucionar Pokémon.
+  * Se corrige bug del vendedor de Circuito Arubaru.
+  * Se añade más variedad de Pokémon en las rutas.
+  * Se corrige Bug en varios edificios de "Ciudad Carrera"

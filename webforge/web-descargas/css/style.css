@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    /*background-image: url("../img/background.jpg");
+    background-size: cover;*/
+    background: linear-gradient(to top right, #3c4692 0%, #7466aa 100%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    Line-height: 1px;
+    Color: white;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 10px;
+    /*text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;*/
+    /*font-weight: bold;*/
+}
+.hero-text p{
+    color:white;
+    font-size: 15px;
+    line-height: 1.9;
+    /*font-weight: bold;*/
+    margin-bottom: 40px;
+    /*text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;*/
+}
+.hero-img img{
+    width: 500px;
+    height: auto;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #1c1d49;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translatex(8px);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.logoff{
+    display: inline-block;
+    color: white;
+    background: #1c1d49;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    margin-left: 60px;
+    margin-top: -10px;
+}
+.logoff:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translatex(8px);
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0.9%;
+    transform: translateY(-50%);
+}
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    color: #1c1d49;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position:absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #1c1d49;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1540px){
+    .navlist a{
+        margin-left: 10px;
+    }
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0.3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px){
+    .navlist a{
+        margin-left: 10px;
+    }
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .navlist a{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .logoff{
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        margin-top: 10px;
+        margin-left: 0;
+        transition: all .55s ease
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 260px;
+        margin-right: 10px;
+        height: 360px;
+        background: #1c1d49;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 10px;
+        transition: all .55s ease;
+        border-radius: 20%;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+        font-size: 15px;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
+@media (max-width: 680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 610px){
+    .hero-text{
+        padding-top: 50;
+    }
+    .hero{
+        width: 165%;
+        padding-bottom:  400px;
+        background: linear-gradient(to top right, #3c4692 0%, #7466aa 100%);
+    }
+    .hero-img img{
+        width: 550px;
+        height: auto;
+        padding-top: 70px;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .page{
+        display: block;
+        position:absolute;
+        bottom: 10%;
+        right: 9%;
+    }
+    .page i{
+        display: block;
+        padding: 12px;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background: #1c1d49;
+        border-radius: 30px;
+        transition: all .50s ease;
+    }
+    .page i:hover{
+        transform: translateY(-5px);
+    }
+}
+@media (max-height: 1000px) and (max-width: 610px) {
+    .hero {
+        padding-bottom: 410px;
+    }
+    .page {
+        bottom: 10%;
+    }
+}
+@media (max-height: 700px) and (max-width: 610px){
+    .hero{
+        padding-bottom:  260px;
+    }
+    .page{
+        bottom: 10%;
+    }
+}
+
+
+/*Descargas*/
+
+ 
+  .downloads {
+    width: 100%
+  }
+  .spoilerLink {
+    line-height: 200%;
+  }
+  .showAll {
+    text-align: center;
+    margin-top: 2em;
+  }
+  .downloadTable {
+    border-collapse: collapse;
+    width: auto;
+    line-height: 200%;
+
+  }
+  .downloadLine .colFile {
+    width: 170px;
+    padding-left: 10px;
+  }
+  .downloadLine .colDownload A,
+  .downloadButton A {
+    width: 110px;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-right: 10px;
+    border: 1px solid #5168CF;
+  }
+  .downloadLine .colDate {
+    width: 80px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  /* Main */
+  .downloadLineMain:first-child {
+    background-color: #F0F3FF;
+  }
+  .downloadLineMain:first-child .colDownload  A, 
+  .downloadButton A{
+    font-weight: normal;
+    color: white;
+    background-color: #313E7C;
+    border: 1px solid #313E7C;
+  }
+  .downloadLineMain:first-child .colDownload A:hover,
+  .downloadButton A:hover{
+    background-color: #6974A3;
+    transition: .25s;
+  }

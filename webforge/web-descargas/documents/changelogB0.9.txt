@@ -1,0 +1,12 @@
+Changelog Region Arjonia
+-------------------
+
+Beta 0.9   (01-05-2023)
+  * Se agrega "Circuito Arubaru"
+  * Se agrega "Ruta 2"
+  * Se agrega "Ciudad Carrera"
+  * Se agrega "Humedal Carrera"
+  * Se agrega "Estación Antón"
+  * Se agrega "Ruta 1"
+  * Se agrega"Pueblo Antón"
+  * Empieza el proyecto
